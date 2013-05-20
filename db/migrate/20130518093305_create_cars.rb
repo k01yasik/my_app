@@ -3,7 +3,7 @@ class CreateCars < ActiveRecord::Migration
     create_table :cars do |t|
       t.string :brand
       t.string :model
-
+      t.string :nauto
       t.timestamps
     end
   end

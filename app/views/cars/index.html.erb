@@ -10,6 +10,7 @@
       <tr>
         <td><%= post.brand %></td>
         <td><%= post.model %></td>
+        <td><%= post.nauto %></td>
         <td><%= link_to 'Показать', :action => :show, :id => post.id %></td>
         <td><%= link_to 'Редактировать', :action => :edit, :id => post.id %></td>
         <td><%= link_to 'Удалить', {:action => :destroy, :id => post.id}, :method => :delete, :confirm => 'Вы уверены?' %></td>
