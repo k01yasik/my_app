@@ -8,10 +8,10 @@ class CarsController < ApplicationController
     end
 
     def create
-      @post = Car.new(params[:cars])
+      @post = Car.new(params[:owners])
 
       if @post.save
-        redirect_to :action => :index
+        redirect_to owner_cars_path
       else
         render 'new'
       end

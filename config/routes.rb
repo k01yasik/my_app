@@ -51,7 +51,7 @@ MyApp::Application.routes.draw do
   resources :owners do
     resources :cars
   end
-  root :to => 'cars#index'
+  root :to => 'owners#index'
 
 
   # See how all your routes lay out with "rake routes"
