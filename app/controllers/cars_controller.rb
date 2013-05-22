@@ -8,10 +8,10 @@ class CarsController < ApplicationController
     end
 
     def create
-      @post = Car.new(params[:car])
+      @post = Car.new(params[:owners])
 
       if @post.save
-        redirect_to :action => :index
+        redirect_to owner_cars_path
       else
         render 'new'
       end
@@ -25,7 +25,7 @@ class CarsController < ApplicationController
     def update
       @post = Car.find(params[:id])
 
-      if @post.update_attributes(params[:car])
+      if @post.update_attributes(params[:cars])
         redirect_to :action => :index
       else
         render 'edit'

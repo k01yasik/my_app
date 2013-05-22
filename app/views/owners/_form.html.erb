@@ -1,0 +1,15 @@
+<%= form_for @owner do |f| %>
+    <p>
+      <%= f.label :fam %><br>
+      <%= f.text_field :fam %>
+    </p>
+
+    <p>
+      <%= f.label :name %><br>
+      <%= f.text_field :name %>
+    </p>
+
+    <p>
+      <%= f.submit %>
+    </p>
+<% end %>
