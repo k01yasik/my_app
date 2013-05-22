@@ -1,6 +1,7 @@
 class CarsController < ApplicationController
     def index
-      @post = Car.all
+      @post = Owner.find(params[:owner_id])
+      @post_sh = @post.cars.all
     end
 
     def new
@@ -8,13 +9,10 @@ class CarsController < ApplicationController
     end
 
     def create
-      @post = Car.new(params[:owners])
+      @post = Owner.find(params[:owner_id])
+      @post_sh = @post.cars.create(params[:post])
+      redirect_to owner_cars_path
 
-      if @post.save
-        redirect_to owner_cars_path
-      else
-        render 'new'
-      end
     end
     def show
       @post = Car.find(params[:id])
