@@ -25,7 +25,7 @@ class OwnersController < ApplicationController
   def update
     @owner = Owner.find(params[:id])
 
-    if @owner.update_attributes(params[:Owners])
+    if @owner.update_attributes(params[:owner])
       redirect_to :action => :index
     else
       render 'edit'

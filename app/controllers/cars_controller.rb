@@ -5,12 +5,12 @@ class CarsController < ApplicationController
     end
 
     def new
-      @post = Car.new
+      @post_sh = Car.new
     end
 
     def create
       @post = Owner.find(params[:owner_id])
-      @post_sh = @post.cars.create(params[:post])
+      @post_sh = @post.cars.create(params[:post_sh])
       redirect_to owner_cars_path
 
     end
@@ -18,12 +18,14 @@ class CarsController < ApplicationController
       @post = Car.find(params[:id])
     end
     def edit
-      @post = Car.find(params[:id])
+      @post = Owner.find(params[:owner_id])
+      @post_sh = @post.cars.find(params[:id])
     end
     def update
-      @post = Car.find(params[:id])
+      @post = Owner.find(params[:owner_id])
+      @post_sh = @post.cars.find(params[:id])
 
-      if @post.update_attributes(params[:cars])
+      if @post_sh.update_attributes(params[:post_sh])
         redirect_to :action => :index
       else
         render 'edit'
