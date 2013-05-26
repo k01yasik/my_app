@@ -1,15 +1,15 @@
 <%= form_for @owner do |f| %>
     <p>
-      <%= f.label :fam %><br>
+      <%= f.label 'Фамилия'%><br>
       <%= f.text_field :fam %>
     </p>
 
     <p>
-      <%= f.label :name %><br>
+      <%= f.label 'Имя'%><br>
       <%= f.text_field :name %>
     </p>
 
     <p>
-      <%= f.submit %>
+      <%= f.submit 'Добавить', {:class => 'btn btn-primary'}%>
     </p>
 <% end %>

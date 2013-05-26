@@ -14,9 +14,7 @@ class CarsController < ApplicationController
       redirect_to owner_cars_path
 
     end
-    def show
-      @post = Car.find(params[:id])
-    end
+
     def edit
       @post = Owner.find(params[:owner_id])
       @post_sh = @post.cars.find(params[:id])

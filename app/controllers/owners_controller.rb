@@ -16,9 +16,7 @@ class OwnersController < ApplicationController
       render 'new'
     end
   end
-  def show
-    @owner = Owner.find(params[:id])
-  end
+
   def edit
     @owner = Owner.find(params[:id])
   end

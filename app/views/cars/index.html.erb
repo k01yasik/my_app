@@ -2,9 +2,9 @@
 
 <table class="table table-hover">
   <tr>
-    <th>Brand</th>
-    <th>Model</th>
-    <th>Nauto</th>
+    <th>Марка</th>
+    <th>Модель</th>
+    <th>Номер авто</th>
   </tr>
 
   <% @post_sh.each do |post| %>
@@ -12,10 +12,10 @@
         <td><%= post.brand %></td>
         <td><%= post.model %></td>
         <td><%= post.nauto %></td>
-        <td><%= link_to 'Показать', :action => :show, :id => post.id %></td>
         <td><%= link_to 'Редактировать', :action => :edit, :id => post.id %></td>
         <td><%= link_to 'Удалить', {:action => :destroy, :id => post.id}, :method => :delete, :confirm => 'Вы уверены?' %></td>
       </tr>
   <% end %>
 </table>
-<%= link_to 'Новая запись', :action => :new %>
+<p><%= link_to 'Добавить машину', :action => :new %></p>
+<p><%= link_to 'К списку владельцев', :controller => :owners, :action => :index %></p>

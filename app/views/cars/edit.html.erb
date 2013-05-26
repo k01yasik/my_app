@@ -1,24 +1,24 @@
-<h1>Editing post</h1>
+<h1>Редактирование данных машины</h1>
 <%= form_for :post_sh, :url => { :action => :update },
              :method => :put do |f| %>
     <p>
-      <%= f.label :brand %><br>
+      <%= f.label 'Марка' %><br>
       <%= f.text_field :brand %>
     </p>
 
     <p>
-      <%= f.label :model %><br>
+      <%= f.label 'Модель' %><br>
       <%= f.text_field :model %>
     </p>
 
     <p>
-      <%= f.label :nauto %><br>
+      <%= f.label 'Номер авто' %><br>
       <%= f.text_field :nauto %>
     </p>
 
     <p>
-      <%= f.submit %>
+      <%= f.submit 'Обновить данные', {:class => 'btn btn-primary'}%>
     </p>
 <% end %>
 
-<%= link_to 'Back', :action => :index %>
+<%= link_to 'К списку машин владельца', :action => :index %>

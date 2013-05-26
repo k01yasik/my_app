@@ -32,7 +32,6 @@ ActiveRecord::Schema.define(:version => 20130523085400) do
   end
 
   create_table "postis", :force => true do |t|
-    t.integer  "index"
     t.string   "opsname"
     t.string   "opstype"
     t.string   "opssubm"
@@ -41,10 +40,9 @@ ActiveRecord::Schema.define(:version => 20130523085400) do
     t.string   "area"
     t.string   "city"
     t.string   "city_1"
-    t.date     "actdate"
+    t.datetime "actdate"
     t.integer  "indexold"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+
   end
 
 end

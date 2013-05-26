@@ -6,6 +6,12 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql2'
+gem 'will_paginate'
+gem 'will_paginate-bootstrap'
+gem 'devise'
+gem 'cancan'
+gem 'formtastic-bootstrap'
+gem 'thinking-sphinx'
 
 
 # Gems used only for assets and not required

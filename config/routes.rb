@@ -51,6 +51,7 @@ MyApp::Application.routes.draw do
   resources :owners do
     resources :cars
   end
+  resources :postis
   root :to => 'owners#index'
 
 
