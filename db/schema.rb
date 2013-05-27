@@ -11,7 +11,25 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130523085400) do
+ActiveRecord::Schema.define(:version => 20130527163130) do
+
+  create_table "admins", :force => true do |t|
+    t.string   "email",                  :default => "", :null => false
+    t.string   "encrypted_password",     :default => "", :null => false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          :default => 0
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
+    t.datetime "created_at",                             :null => false
+    t.datetime "updated_at",                             :null => false
+  end
+
+  add_index "admins", ["email"], :name => "index_admins_on_email", :unique => true
+  add_index "admins", ["reset_password_token"], :name => "index_admins_on_reset_password_token", :unique => true
 
   create_table "cars", :force => true do |t|
     t.string   "brand"
@@ -32,17 +50,16 @@ ActiveRecord::Schema.define(:version => 20130523085400) do
   end
 
   create_table "postis", :force => true do |t|
-    t.string   "opsname"
-    t.string   "opstype"
-    t.string   "opssubm"
-    t.string   "region"
-    t.string   "autonom"
-    t.string   "area"
-    t.string   "city"
-    t.string   "city_1"
-    t.datetime "actdate"
-    t.integer  "indexold"
-
+    t.string "opsname",  :limit => 60
+    t.string "opstype",  :limit => 50
+    t.string "opssubm",  :limit => 6
+    t.string "region",   :limit => 60
+    t.string "autonom",  :limit => 60
+    t.string "area",     :limit => 60
+    t.string "city",     :limit => 60
+    t.string "city_1",   :limit => 60
+    t.string "actdate",  :limit => 40
+    t.string "indexold", :limit => 6
   end
 
 end
