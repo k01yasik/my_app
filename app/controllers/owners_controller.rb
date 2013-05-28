@@ -1,5 +1,5 @@
 class OwnersController < ApplicationController
-  before_filter :authenticate_admin!, :only => [:edit,:new, :create]
+  before_filter :authenticate_admin!, :except => [:index]
   def index
     @owner = Owner.all
   end

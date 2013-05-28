@@ -1,4 +1,5 @@
 class CarsController < ApplicationController
+    before_filter :authenticate_admin!, :except => [:index]
     def index
       @post = Owner.find(params[:owner_id])
       @post_sh = @post.cars.all

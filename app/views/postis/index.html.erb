@@ -1,32 +1,25 @@
-<table class="table table-hover">
+<table class="table table-condensed table-hover">
   <tr>
     <th>Индекс</th>
     <th>Имя опс</th>
-    <th>Тип опс</th>
-    <th>Opssubm</th>
     <th>Область</th>
     <th>Автономер</th>
     <th>Район</th>
     <th>Город</th>
     <th>Город_1</th>
-    <th>Дата сверки</th>
-    <th>Старый индекс</th>
+
   </tr>
   <% @pos.each do |p| %>
   <tr>
     <td><%= p.id %></td>
     <td><%= p.opsname %></td>
-    <td><%= p.opstype %></td>
-    <td><%= p.opssubm %></td>
     <td><%= p.region %></td>
     <td><%= p.autonom %></td>
     <td><%= p.area %></td>
     <td><%= p.city %></td>
     <td><%= p.city_1 %></td>
-    <td><%= p.actdate %></td>
-    <td><%= p.indexold %></td>
     <td><%= link_to 'Show', :action => :show, :id => p.id, :page => params[:page] %></td>
   </tr>
   <% end %>
 </table>
-<%= will_paginate @pos, :renderer => BootstrapPagination::Rails %>
+<%= will_paginate @pos, :renderer => BootstrapPagination::Rails, :class => 'pagination pagination-mini pagination-centered' %>
