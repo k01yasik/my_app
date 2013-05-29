@@ -9,8 +9,6 @@
     <th>Район</th>
     <th>Город</th>
     <th>Город_1</th>
-    <th>Дата сверки</th>
-    <th>Старый индекс</th>
   </tr>
   <tr>
     <td><%= @pos.id %></td>
@@ -22,8 +20,6 @@
     <td><%= @pos.area %></td>
     <td><%= @pos.city %></td>
     <td><%= @pos.city_1 %></td>
-    <td><%= @pos.actdate %></td>
-    <td><%= @pos.indexold %></td>
   </tr>
 </table>
 <%= link_to 'Назад', :action => :index, :page => params[:page] %>

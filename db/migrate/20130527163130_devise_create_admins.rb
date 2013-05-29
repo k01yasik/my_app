@@ -33,7 +33,7 @@ class DeviseCreateAdmins < ActiveRecord::Migration
       ## Token authenticatable
       # t.string :authentication_token
 
-
+      t.boolean :admin
       t.timestamps
     end
 

@@ -632,6 +632,9 @@ a:focus {
 }
 
 .container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1280px;
   *zoom: 1;
 }
 
@@ -6162,4 +6165,10 @@ a.badge:focus {
 
 .affix {
   position: fixed;
+}
+
+.header {
+    width: 1280px;
+    height: 300px;
+    background: url(/assets/back.jpg);
 }
