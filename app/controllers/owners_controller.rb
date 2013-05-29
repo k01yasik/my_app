@@ -2,6 +2,7 @@ class OwnersController < ApplicationController
   before_filter :authenticate_admin!, :except => [:index]
   def index
     @owner = Owner.all
+
   end
 
   def new
@@ -17,11 +18,12 @@ class OwnersController < ApplicationController
     else
       render 'new'
     end
-
+    authorize! :create, @owner
   end
 
   def edit
     @owner = Owner.find(params[:id])
+    authorize! :edit, @owner
   end
   def update
 
@@ -32,11 +34,14 @@ class OwnersController < ApplicationController
       else
         render 'edit'
       end
-
+      authorize! :update, @owner
   end
   def destroy
+
     @owner = Owner.find(params[:id])
+
     @owner.destroy
     redirect_to :action => :index
+    authorize! :destroy, @owner
   end
 end
