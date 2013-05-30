@@ -17,7 +17,9 @@
         <td><%= link_to 'Добавить машину', :controller => :cars, :action => :new, :owner_id => o.id %></td>
         <td><%= link_to 'Показать машины владельца', :controller => :cars, :action => :index, :owner_id => o.id %></td>
         <td><%= link_to 'Редактировать', :action => :edit, :id => o.id %></td>
+        <% if can? :destroy, @owner %>
         <td><%= link_to 'Удалить', {:action => :destroy, :id => o.id}, :method => :delete, :confirm => 'Вы уверены?' %></td>
+        <% end %>
       </tr>
   <% end %>
 </table>

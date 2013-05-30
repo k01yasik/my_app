@@ -10,7 +10,6 @@ gem 'will_paginate'
 gem 'will_paginate-bootstrap'
 gem 'devise'
 gem 'cancan'
-gem 'formtastic-bootstrap'
 gem 'thinking-sphinx'
 
 
