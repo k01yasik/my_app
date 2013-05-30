@@ -37,11 +37,11 @@ class OwnersController < ApplicationController
       authorize! :update, @owner
   end
   def destroy
-
+    authorize! :destroy, @owner
     @owner = Owner.find(params[:id])
 
     @owner.destroy
     redirect_to :action => :index
-    authorize! :destroy, @owner
+
   end
 end
