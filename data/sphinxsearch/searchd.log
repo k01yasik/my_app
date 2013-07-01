@@ -1,0 +1,36 @@
+[Thu Jun 20 01:20:45.060 2013] [ 6108] listening on all interfaces, port=9312
+[Thu Jun 20 01:20:45.062 2013] [ 6108] listening on all interfaces, port=9306
+[Thu Jun 20 01:20:45.063 2013] [ 6108] WARNING: index 'test1': preload: failed to open c:/Sites/my_app/data/index/test1.sph: No such file or directory; NOT SERVING
+[Thu Jun 20 01:20:45.075 2013] [ 6108] FATAL: failed to open 'c:/Sites/my_app/data/sphinxsearch/data/binlog.lock': 2 'No such file or directory'
+[Thu Jun 20 12:44:24.971 2013] [ 5724] listening on all interfaces, port=9312
+[Thu Jun 20 12:44:24.973 2013] [ 5724] listening on all interfaces, port=9306
+[Thu Jun 20 12:44:25.002 2013] [ 5724] accepting connections
+[Thu Jun 20 15:17:49.034 2013] [ 5724] rt: index testrt: ramchunk saved in 0.021 sec
+[Thu Jun 20 15:17:49.150 2013] [ 5724] shutdown complete
+[Thu Jun 20 15:29:38.292 2013] [ 2140] listening on all interfaces, port=9312
+[Thu Jun 20 15:29:38.294 2013] [ 2140] listening on all interfaces, port=9306
+[Thu Jun 20 15:29:38.352 2013] [ 2140] rotating index 'test1': success
+[Thu Jun 20 15:29:38.384 2013] [ 2140] accepting connections
+[Thu Jun 20 15:30:43.639 2013] [ 2140] rt: index testrt: ramchunk saved in 0.010 sec
+[Thu Jun 20 15:30:43.669 2013] [ 2140] shutdown complete
+[Thu Jun 20 15:30:46.859 2013] [ 5868] listening on all interfaces, port=9312
+[Thu Jun 20 15:30:46.860 2013] [ 5868] listening on all interfaces, port=9306
+[Thu Jun 20 15:30:46.877 2013] [ 5868] FATAL: failed to open 'c:/Sites/my_app/data/sphinxsearch/binlog/binlog.lock': 2 'No such file or directory'
+[Thu Jun 20 15:32:48.998 2013] [ 5076] listening on all interfaces, port=9312
+[Thu Jun 20 15:32:48.999 2013] [ 5076] listening on all interfaces, port=9306
+[Thu Jun 20 15:32:49.012 2013] [ 5076] FATAL: failed to open 'c:/Sites/my_app/data/sphinxsearch/binlog/binlog.lock': 2 'No such file or directory'
+[Thu Jun 20 15:33:18.100 2013] [ 3724] listening on all interfaces, port=9312
+[Thu Jun 20 15:33:18.102 2013] [ 3724] listening on all interfaces, port=9306
+[Thu Jun 20 15:33:18.129 2013] [ 3724] accepting connections
+[Thu Jun 20 15:39:57.026 2013] [ 3724] rt: index testrt: ramchunk saved in 0.024 sec
+[Thu Jun 20 15:39:57.081 2013] [ 3724] shutdown complete
+[Thu Jun 20 15:45:42.400 2013] [ 5528] listening on all interfaces, port=9312
+[Thu Jun 20 15:45:42.402 2013] [ 5528] listening on all interfaces, port=9306
+[Thu Jun 20 15:45:42.435 2013] [ 5528] accepting connections
+[Thu Jun 20 15:50:43.888 2013] [ 5528] rt: index testrt: ramchunk saved in 0.007 sec
+[Thu Jun 20 15:50:43.929 2013] [ 5528] shutdown complete
+[Thu Jun 20 17:52:40.264 2013] [  248] listening on all interfaces, port=9312
+[Thu Jun 20 17:52:40.266 2013] [  248] listening on all interfaces, port=9306
+[Thu Jun 20 17:52:40.304 2013] [  248] accepting connections
+[Thu Jun 20 17:59:44.449 2013] [  248] rt: index testrt: ramchunk saved in 0.012 sec
+[Thu Jun 20 17:59:44.471 2013] [  248] shutdown complete

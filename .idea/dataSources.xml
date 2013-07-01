@@ -1,51 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="2998563029">
-    <data-source source="LOCAL" name="Rails my_app: test" product="MySQL" version="5.0.67-community-nt" jdbc-version="4.0" driver-name="MySQL-AB JDBC Driver" driver-version="mysql-connector-java-5.1.18 ( Revision: tonci.grgin@oracle.com-20110930151701-jfj14ddfq48ifkfq )" uuid="fcc0728b-9e5d-4c3c-8416-d2bff200bb3b">
-      <extra-name-characters>#@</extra-name-characters>
-      <identifier-quote-string>`</identifier-quote-string>
-      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://127.0.0.1/my_app_test</jdbc-url>
-      <user-name>root</user-name>
-      <user-password>dffbdfdddfcfdfd8df8bdf98df99df9e</user-password>
-      <libraries>
-        <library>
-          <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/mysql-connector-license.txt</url>
-        </library>
-        <library>
-          <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/mysql-connector-java-5.1.18-bin.jar</url>
-        </library>
-      </libraries>
-    </data-source>
-    <data-source source="LOCAL" name="Rails my_app: production" product="MySQL" version="5.0.67-community-nt" jdbc-version="4.0" driver-name="MySQL-AB JDBC Driver" driver-version="mysql-connector-java-5.1.18 ( Revision: tonci.grgin@oracle.com-20110930151701-jfj14ddfq48ifkfq )" uuid="7c7c9a60-c23d-45b2-8b2c-218d343471d4">
-      <extra-name-characters>#@</extra-name-characters>
-      <identifier-quote-string>`</identifier-quote-string>
+  <component name="DataSourceManagerImpl" format="xml" hash="412685241">
+    <data-source source="LOCAL" name="Rails my_app: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="ae58af9e-3d02-44d2-8c2c-a8c1f44d202a">
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://127.0.0.1/my_app_production</jdbc-url>
       <user-name>root</user-name>
       <user-password>dffbdfdddfcfdfd8df8bdf98df99df9e</user-password>
       <libraries>
         <library>
-          <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/mysql-connector-license.txt</url>
+          <url>file://$USER_HOME$/.IntelliJIdea12/config/jdbc-drivers/mysql-connector-license.txt</url>
         </library>
         <library>
-          <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/mysql-connector-java-5.1.18-bin.jar</url>
+          <url>jar://$USER_HOME$/.IntelliJIdea12/config/jdbc-drivers/mysql-connector-java-5.1.18-bin.jar!/</url>
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="Rails my_app: development" product="MySQL" version="5.0.67-community-nt" jdbc-version="4.0" driver-name="MySQL-AB JDBC Driver" driver-version="mysql-connector-java-5.1.18 ( Revision: tonci.grgin@oracle.com-20110930151701-jfj14ddfq48ifkfq )" uuid="aeb4e357-307d-4388-bb0a-d5eae9cbc085">
-      <extra-name-characters>#@</extra-name-characters>
-      <identifier-quote-string>`</identifier-quote-string>
+    <data-source source="LOCAL" name="Rails my_app: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="2db3072d-7b42-4a22-b9df-ef1fb7230f99">
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://127.0.0.1/my_app_development</jdbc-url>
+      <jdbc-url>jdbc:mysql://127.0.0.1/my_app_test</jdbc-url>
       <user-name>root</user-name>
       <user-password>dffbdfdddfcfdfd8df8bdf98df99df9e</user-password>
       <libraries>
         <library>
-          <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/mysql-connector-license.txt</url>
+          <url>file://$USER_HOME$/.IntelliJIdea12/config/jdbc-drivers/mysql-connector-license.txt</url>
         </library>
         <library>
-          <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/mysql-connector-java-5.1.18-bin.jar</url>
+          <url>jar://$USER_HOME$/.IntelliJIdea12/config/jdbc-drivers/mysql-connector-java-5.1.18-bin.jar!/</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="Rails my_app: development" product="MySQL" version="5.0.67-community-nt" jdbc-version="4.0" driver-name="MySQL-AB JDBC Driver" driver-version="mysql-connector-java-5.1.18 ( Revision: tonci.grgin@oracle.com-20110930151701-jfj14ddfq48ifkfq )" uuid="968c3eff-eb32-4035-8ea7-37c52c801c1b">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1/my_app_development</jdbc-url>
+      <user-name>root</user-name>
+      <user-password>dffbdfdddfcfdfd8df8bdf98df99df9e</user-password>
+      <schema-pattern>*</schema-pattern>
+      <default-schemas>information_schema.* my_app_development.* my_app_production.* my_app_test.* mysql.* test.*</default-schemas>
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/.IntelliJIdea12/config/jdbc-drivers/mysql-connector-java-5.1.18-bin.jar</url>
         </library>
       </libraries>
     </data-source>

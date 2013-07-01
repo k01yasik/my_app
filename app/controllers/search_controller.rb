@@ -1,6 +1,5 @@
 class SearchController < ApplicationController
   def show
-    @search = params[:search]
-    @result = ThinkingSphinx.search @search
+    @result = Posti.search params[:search]
   end
 end

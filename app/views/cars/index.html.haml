@@ -1,0 +1,20 @@
+%h1Машины: #{@post.fam} #{@post.name}
+
+%table.table.table-hover
+  %tr
+    %th Марка
+    %th Модель
+    %th Номер авто
+
+
+  - @post_sh.each do |post|
+    %tr
+      %td= post.brand
+      %td= post.model
+      %td= post.nauto
+      %td= link_to 'Редактировать', :action => :edit, :id => post.id
+      %td= link_to 'Удалить', {:action => :destroy, :id => post.id}, :method => :delete, :confirm => 'Вы уверены?'
+
+
+%p= link_to 'Добавить машину', :action => :new
+%p= link_to 'К списку владельцев', :controller => :owners, :action => :index

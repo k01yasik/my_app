@@ -1,0 +1,9 @@
+= form_for @owner do |f|
+  %p
+    = f.label 'Фамилия'
+    = f.text_field :fam
+  %p
+    = f.label 'Имя'
+    = f.text_field :name
+  %p
+    = f.submit 'Добавить', {:class => 'btn btn-primary'}

@@ -1,0 +1,19 @@
+.wrap {
+    background: #000000;
+    margin-top: 20px;
+    border: 1px solid #ffffff;
+    border-left: none;
+    border-radius: 0 8px 8px 0;
+    height: 33px;
+    line-height: 33px;
+}
+
+.wrap > a {
+    padding-left: 20px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.wrap > a:hover {
+    text-decoration: none;
+}

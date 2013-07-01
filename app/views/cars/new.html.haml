@@ -1,0 +1,19 @@
+= form_for :post_sh, :url => { :action => :create } do |f|
+    - if @post_sh.errors.any?
+        %div#errorExplanation
+            %h2 "#{pluralize(@post.errors.count, 'error')}" prohibited this post from being saved:
+            %ul
+                - @post_sh.errors.full_messages.each do |msg|
+                    %li= msg
+    %p
+        = f.label 'Марка'
+        = f.text_field :brand
+    %p
+        = f.label 'Модель'
+        = f.text_field :model
+    %p
+        = f.label 'Номер авто'
+        = f.text_field :nauto
+    %p
+        = f.submit "Добавить машину", {:class => 'btn btn-primary'}
+= link_to 'Назад', :action => :index

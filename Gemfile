@@ -11,8 +11,9 @@ gem 'will_paginate-bootstrap'
 gem 'devise'
 gem 'cancan'
 gem 'thinking-sphinx'
-
-
+gem 'haml'
+gem 'railroad'
+gem 'rails-erd'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do

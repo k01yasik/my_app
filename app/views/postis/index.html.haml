@@ -1,0 +1,25 @@
+%table.table.table-condensed.table-hover
+  %tr>
+    %th Индекс
+    %th Имя опс
+    %th Область
+    %th Автономер
+    %th Район
+    %th Город
+    %th Город_1
+
+  
+  -@pos.each do |p|
+    %tr
+      %td= p.id
+      %td= p.opsname
+      %td= p.region
+      %td= p.autonom
+      %td= p.area
+      %td= p.city
+      %td= p.city_1
+      %td= link_to 'Show', :action => :show, :id => p.id, :page => params[:page]
+
+
+= will_paginate @pos, :renderer => BootstrapPagination::Rails, :class => 'pagination pagination-mini pagination-centered'
+= link_to 'На главную', root_path

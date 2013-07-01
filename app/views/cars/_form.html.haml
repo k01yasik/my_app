@@ -1,0 +1,12 @@
+= form_for @post do |f|
+  %p
+    = f.label 'Марка'
+    = f.text_field :brand
+  %p
+    = f.label 'Модель'
+    = f.text_field :model
+  %p
+    = f.label 'Номер авто'
+    = f.text_field :nauto
+  %p
+    = f.submit

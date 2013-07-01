@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+%html
+%head
+  %title MyApp
+  = stylesheet_link_tag    'application', :media => 'all'
+  = javascript_include_tag 'application'
+  = csrf_meta_tags
+
+%body
+  .container-fluid
+    .row-fluid.header
+      .row-fluid
+        .span4.offset6
+          = form_tag(search_path, :method =>  :get, class: 'navbar-search')  do
+            = text_field_tag :search, params[:search], :class => 'span12 search-query', :placeholder => 'Поиск'
+          .btn-group.pull-right
+            =link_to 'Вход', new_admin_session_path, class: 'btn'
+            =link_to 'Регистрация', new_admin_registration_path, class: 'btn btn-primary'
+      .row-fluid
+        .span2.offset2
+          .wrap
+            =link_to 'Post Land', root_path
+      .row-fluid
+        .span8.offset2
+          .navbar.navbar-inverse
+            .navbar-inner
+              %ul.nav
+                %li{:class => "#{'active' if current_page?(root_path)}"}
+                  =link_to 'Главная', root_path
+                %li{:class => "#{'active' if current_page?(postis_path)}"}
+                  =link_to 'Индексы', postis_path
+    .row-fluid
+      .span2
+      .span8= yield
+      .span2
+    .row-fluid

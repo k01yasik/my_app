@@ -1,0 +1,24 @@
+%table.table.table-condensed.table-hover
+  %tr
+    %th Индекс
+    %th Имя опс
+    %th Тип опс
+    %th Opssubm
+    %th Область
+    %th Автономер
+    %th Район
+    %th Город
+    %th Город_1
+  %tr
+    %td= @pos.id
+    %td= @pos.opsname
+    %td= @pos.opstype
+    %td= @pos.opssubm
+    %td= @pos.region
+    %td= @pos.autonom
+    %td= @pos.area
+    %td= @pos.city
+    %td= @pos.city_1
+= link_to 'Назад', :action => :index, :page => params[:page]
+%br
+= link_to 'На главную', root_path

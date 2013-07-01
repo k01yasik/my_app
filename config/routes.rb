@@ -54,6 +54,7 @@ MyApp::Application.routes.draw do
     resources :cars
   end
   resources :postis
+  resource :search, only: :show, controller: :search
   root :to => 'owners#index'
 
 
