@@ -13,3 +13,8 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+/config/thinking_sphinx.yml
+/config/development.sphinx.conf
+/config/database.yml
+/data
+/db/sphinx

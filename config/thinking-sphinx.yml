@@ -1,6 +1,0 @@
-development:
-  mysql: 9312
-  configuration_file: "RAILS_ROOT\config\development.sphinx.conf"
-  log: "RAILS_ROOT/data/sphinxsearch/searchd.log"
-  query_log: "RAILS_ROOT/data/sphinxsearch/query.log"
-  pid_file: "RAILS_ROOT\data\sphinxsearch\searchd.pid"

@@ -29,6 +29,9 @@
                   =link_to 'Главная', root_path
                 %li{:class => "#{'active' if current_page?(postis_path)}"}
                   =link_to 'Индексы', postis_path
+                -if current_page?(search_path)
+                  %li.active
+                    =link_to 'Результаты поиска', search_path
     .row-fluid
       .span2
       .span8= yield
